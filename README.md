@@ -18,7 +18,7 @@ including fine details (windmill blades, background wood fence texture).
 
 | Ground Truth | Reconstruction |
 |---|---|
-| `output/paper-windmill/dataset_views/gt_t136.png` | `output/paper-windmill/dataset_views/recon_t136.png` |
+| <img src="output/paper-windmill/dataset_views/gt_t136.png" width="400"> | <img src="output/paper-windmill/dataset_views/recon_t136.png" width="400"> |
 
 ### Experiment 2 — Custom video (own head-turn video)
 Captured a 9.5s / 285-frame 1080p video on an iPhone with the camera held static, head turning side to side.
@@ -26,7 +26,7 @@ Built a full custom preprocessing pipeline (see below) since the raw video isn't
 
 | Ground Truth | Reconstruction |
 |---|---|
-| `output/my_head_video/results_v2/gt_t036.png` | `output/my_head_video/results_v2/recon_t036.png` |
+| <img src="output/my_head_video/results_v2/gt_t036.png" width="300"> | <img src="output/my_head_video/results_v2/recon_t036.png" width="300"> |
 
 Result is recognizable (head shape, hair, face, dark t-shirt, room/chandelier in background) but noticeably
 blurrier than the benchmark — discussed in Limitations below.
