@@ -1,7 +1,7 @@
 import time
 from typing import Literal
 
-import cupy as cp
+import numpy as cp
 import imageio.v3 as iio
 import numpy as np
 
@@ -10,7 +10,11 @@ import roma
 import torch
 import torch.nn.functional as F
 from torch import Tensor
-from cuml import HDBSCAN, KMeans
+from sklearn.cluster import KMeans
+try:
+    from cuml import HDBSCAN
+except ImportError:
+    from sklearn.cluster import HDBSCAN
 from loguru import logger as guru
 from matplotlib.pyplot import get_cmap
 from tqdm import tqdm

@@ -1,14 +1,25 @@
-*.pth
-*.npy
-*.mp4
-outputs/
-work_dirs/
-*__pycache__*
-.vscode/
-.envrc
-.bak/
-datasets/
-results/
-
-preproc/checkpoints
+# Large data - not tracked
+data/
 preproc/checkpoints/
+preproc/DROID-SLAM/
+preproc/UniDepth/
+preproc/tapnet/
+
+# Logs
+*.log
+
+# Backup files
+*.bak
+
+# Python
+__pycache__/
+*.pyc
+*.egg-info/
+
+# Large model outputs (keep small renders, exclude big intermediate stuff)
+output/*/code/
+output/*/tb/
+
+# OS
+.DS_Store
+Thumbs.db

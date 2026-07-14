@@ -82,7 +82,7 @@ class TrainConfig:
 def main(cfg: TrainConfig):
     backup_code(cfg.work_dir)
     train_dataset, train_video_view, val_img_dataset, val_kpt_dataset = (
-        get_train_val_datasets(cfg.data, load_val=True)
+        get_train_val_datasets(cfg.data, load_val=False)
     )
     guru.info(f"Training dataset has {train_dataset.num_frames} frames")
 
